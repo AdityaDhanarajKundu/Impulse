@@ -1,12 +1,12 @@
-import React,{useState} from 'react';
-import { Link } from 'react-router-dom';
-import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import impulse from "../assets/logofinal.png";
 import mmch from "../assets/mmch.png";
 
 // events, schedule, sponsors, gallery, members, about
 function Navbar() {
-  const[isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const navItems = [
     { label: "Events", path: "/events" },
     { label: "Schedule", path: "/schedule" },
@@ -17,43 +17,52 @@ function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 left-0 w-full h-35 z-50 bg-transparent backdrop-blur-sm text-white shadow-sm">
+    <header className="w-full z-50 bg-transparent backdrop-blur-sm text-white shadow-md sticky top-0">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center   ">
-          <img
-            src={impulse}
-            alt="Impulse Logo"
-            className="w-35 h-40 object-contain block"
-          />
-        </Link>
+        <div className="flex items-center space-x-4">
+          <Link to="/" className="flex items-center">
+            <img
+              src={impulse}
+              alt="Impulse Logo"
+              className="aspect-square w-24"
+            />
+          </Link>
+          <Link to="/" className="flex items-center">
+            <img src={mmch} alt="College Logo" className="aspect-square w-24" />
+          </Link>
+        </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex space-x-8 text-sm font-medium">
+        <ul className="hidden md:flex space-x-8 text-lg font-medium">
           {navItems.map((item) => (
             <li key={item.label}>
               <Link
                 to={item.path}
-                // className="hover:text-indigo-400 transition duration-200"
-                className={`px-4 py-2 rounded-lg transition duration-200 ${
-                  location.pathname === item.path
-                    ? "bg-indigo-500 shadow-lg text-white"
-                    : "hover:bg-indigo-500 hover:shadow-md hover:text-white"
-                }`}
+                className="relative px-6 py-2 font-extrabold group"
               >
-                {item.label}
+                <span
+                  className={`relative z-10 transition-colors duration-300 ${
+                    location.pathname === item.path
+                      ? "text-white"
+                      : "text-gray-300 group-hover:text-white"
+                  }`}
+                >
+                  {item.label}
+                </span>
+                <span
+                  className={`absolute inset-0 rounded-[30px] transition-all duration-300 ease-in-out z-0
+    ${
+      location.pathname === item.path
+        ? "bg-gradient-to-t from-purple-900 to-blue-900 h-full"
+        : "bg-gray-700 h-0 group-hover:h-full group-hover:bg-gradient-to-t group-hover:from-purple-900 group-hover:to-blue-900"
+    }`}
+                  style={{ bottom: 0 }}
+                ></span>
               </Link>
             </li>
           ))}
         </ul>
-
-        <Link to="/" className="flex items-center   ">
-          <img
-            src={mmch}
-            alt="college Logo"
-            className="w-20 h-30 object-contain block"
-          />
-        </Link>
 
         {/* Mobile Toggle Button */}
         <button

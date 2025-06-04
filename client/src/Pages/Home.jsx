@@ -1,23 +1,45 @@
-import React from 'react';
-import dna from "../assets/dna.gif";
+import React,{useState, useEffect} from 'react';
+import HomeVideo from "../assets/home.mp4";
 import Typewriter from "typewriter-effect";
+import AnimatedPhrase from '../Components/AnimatedPhrase';
+import Loader from '../Components/Loader';
 
 function Home() {
+  const [loading, setLoading] = useState(() => {
+    const hasVisited = sessionStorage.getItem("hasVisitedHome");
+    return !hasVisited; // Show loader only if not visited
+  });
+
+  useEffect(() => {
+    if (loading) {
+      const timer = setTimeout(() => {
+        setLoading(false);
+        sessionStorage.setItem("hasVisitedHome", "true"); // mark as visited
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [loading]);
+
+  if (loading) return <Loader />;
+  
   return (
     <section
-      className="p-0 relative h-screen w-full overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b]"
-      style={{
-        backgroundImage: `url(${dna})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+      className="p-0 min-h-screen -mt-32 relative w-full overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b]"
     >
-      <div className="relative z-10 flex flex-col justify-center items-center text-center h-full px-4">
+      <video
+        src={HomeVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
+    <div className="absolute z-10 flex flex-col justify-center items-center text-center h-full w-full px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl poppins-bold text-white drop-shadow-xl">
           <Typewriter
             options={{
-              strings: ["IMPULSE'25 - The FEST"],
+              strings: ["IMPULSE'25 - The Fest"],
               autoStart: true,
               loop: true,
               delay: 75,
@@ -26,9 +48,8 @@ function Home() {
             }}
           />
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-xl">
-          Dive into the double helix of discovery, fun, and innovation.
-        </p>
+
+        <AnimatedPhrase />
 
         {/* CTA Buttons */}
         <div className="mt-8 flex gap-4 flex-wrap justify-center">
