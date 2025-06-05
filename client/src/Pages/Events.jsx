@@ -1,15 +1,23 @@
 import React from "react";
 import EventCards from "../Components/EventCards";
 import events from "../data/data";
+import event from "../assets/events.mp4";
 
 function Events() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-[#0c3b88] via-[#181641] to-[#0f172a] py-20 px-6 text-white">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-        <div className="absolute w-[600px] h-[600px] bg-indigo-700 rounded-full opacity-20 blur-3xl animate-pulse top-[-100px] left-[-150px]" />
-        <div className="absolute w-[400px] h-[400px] bg-purple-700 rounded-full opacity-20 blur-2xl animate-pulse top-[300px] right-[-100px]" />
-      </div>
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="relative min-h-screen bg-gradient-to-br from-[#0c3b88] via-[#181641] to-[#0f172a] py-20 px-6 text-white overflow-hidden">
+      {/* 🔹 Background Video Layer */}
+      <video
+        src={event}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
+
+      {/* 🔹 Content */}
+      <div className="relative max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-16 tracking-tight">
           Our Pre-Fest Events
         </h2>

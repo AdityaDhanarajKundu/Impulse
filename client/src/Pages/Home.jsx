@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import HomeVideo from "../assets/home.mp4";
+import HomeVideo from "../assets/dna.mp4";
 import Typewriter from "typewriter-effect";
 import AnimatedPhrase from '../Components/AnimatedPhrase';
 import Loader from '../Components/Loader';
@@ -33,7 +33,7 @@ function Home() {
         muted
         loop
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className="absolute top-0 left-0 w-full h-full object-fill z-0"
       />
     <div className="absolute z-10 flex flex-col justify-center items-center text-center h-full w-full px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl poppins-bold text-white drop-shadow-xl">
