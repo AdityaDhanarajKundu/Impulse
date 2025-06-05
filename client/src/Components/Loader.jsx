@@ -4,7 +4,7 @@ import loadingAnimation from "../assets/loading.json";
 
 function Loader() {
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b]">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black">
       <div className="w-64 h-64">
         <Lottie animationData={loadingAnimation} loop autoplay />
       </div>
