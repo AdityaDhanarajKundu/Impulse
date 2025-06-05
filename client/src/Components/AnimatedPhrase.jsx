@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const diagnosisPhrases = [
   "Acute Celebration",
-  "Contagious Excitement",
+  "Viral Excitement",
   "A Surge of Adrenaline",
   "Dopamine Rush",
   "Anatomy of Awesome",
