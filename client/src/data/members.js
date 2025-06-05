@@ -176,14 +176,6 @@ export const excutiveHeads = [
     contact: 8503072545,
   },
   {
-    email: "rohit.podder2002@gmail.com",
-    name: "Rohit Podder",
-    photo:
-      "https://res.cloudinary.com/dtical8ob/image/upload/v1749054389/IMG_2222_-_Rohit_Podder_mlqev7.jpg",
-    designation: "Executive Head",
-    contact: 7439586173,
-  },
-  {
     email: "bappapratihar21@gmail.com",
     name: "Bappa Pratihar ",
     photo:
@@ -309,6 +301,14 @@ export const technicalHeads = [
     designation: "Technical Head",
     contact: 7501748054,
   },
+  {
+    email: "rohit.podder2002@gmail.com",
+    name: "Rohit Podder",
+    photo:
+      "https://res.cloudinary.com/dtical8ob/image/upload/v1749054389/IMG_2222_-_Rohit_Podder_mlqev7.jpg",
+    designation: "Technical Head",
+    contact: 7439586173,
+  },
 ];
 
 export const jointSecretaries = [
@@ -405,6 +405,14 @@ export const sportsHeads = [
       "https://res.cloudinary.com/dtical8ob/image/upload/v1749054389/IMG_20250604_003128_-_Isharani_z2inev.jpg",
     designation: "Sports Head",
     contact: 9654456599,
+  },
+  {
+    email: "jaisu58206113@gmail.com",
+    name: "Animesh Mondal",
+    photo:
+      "https://res.cloudinary.com/dtical8ob/image/upload/v1749118586/IMG-20250226-WA0131_2_-_Animesh_Mondal_y3gb11.jpg",
+    designation: "Sports Head",
+    contact: 9382971500,
   },
 ];
 
