@@ -24,9 +24,7 @@ function Home() {
   if (loading) return <Loader />;
   
   return (
-    <section
-      className="p-0 min-h-screen -mt-32 relative w-full overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b]"
-    >
+    <section className="p-0 min-h-screen -mt-32 relative w-full overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b]">
       <video
         src={HomeVideo}
         autoPlay
@@ -35,19 +33,14 @@ function Home() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-fill z-0"
       />
-    <div className="absolute z-10 flex flex-col justify-center items-center text-center h-full w-full px-4">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl poppins-bold text-white drop-shadow-xl">
-          <Typewriter
-            options={{
-              strings: ["IMPULSE'25 - The Fest"],
-              autoStart: true,
-              loop: true,
-              delay: 75,
-              pauseFor: 2000,
-              cursor: "|",
-            }}
-          />
+      <div className="absolute z-10 flex flex-col justify-center items-center text-center h-full w-full px-4">
+        <h1 className="text-[18vw] font-neptune text-white drop-shadow-xl">
+          impulse
         </h1>
+
+        <h2 className="text-white text-lg md:text-2xl lg:text-6xl font-medium mt-2 font-aldith">
+          Ignite The Utopia
+        </h2>
 
         <AnimatedPhrase />
 
