@@ -177,11 +177,19 @@ export const excutiveHeads = [
   },
   {
     email: "bappapratihar21@gmail.com",
-    name: "Bappa Pratihar ",
+    name: "Bappa Pratihar",
     photo:
       "https://res.cloudinary.com/dtical8ob/image/upload/v1749054367/1737356982810_-_bappa_Pratihar_obz735.jpg",
     designation: "Executive Head",
     contact: 8927280075,
+  },
+  {
+    email: "nareshmajhi6502@gmail.com",
+    name: "Naresh Kumar Majhi",
+    photo:
+      "https://res.cloudinary.com/dtical8ob/image/upload/v1749148769/nareshMajhi_ouflum.jpg",
+    designation: "Executive Head",
+    contact: 8458077181,
   },
 ];
 
@@ -308,6 +316,14 @@ export const technicalHeads = [
       "https://res.cloudinary.com/dtical8ob/image/upload/v1749054389/IMG_2222_-_Rohit_Podder_mlqev7.jpg",
     designation: "Technical Head",
     contact: 7439586173,
+  },
+  {
+    email: "masabalam7@gmail.com",
+    name: "Masab Alam",
+    photo:
+      "https://res.cloudinary.com/dtical8ob/image/upload/v1749148768/masab_oiijvd.jpg",
+    designation: "Technical Head",
+    contact: 7586010715,
   },
 ];
 
