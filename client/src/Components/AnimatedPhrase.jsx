@@ -9,6 +9,11 @@ const diagnosisPhrases = [
   "Anatomy of Awesome",
 ];  
 
+const longestPhrase = diagnosisPhrases.reduce(
+  (a, b) => (a.length > b.length ? a : b),
+  ""
+);
+
 const containerVariants = {
   initial: {},
   animate: {
@@ -46,15 +51,22 @@ const currentPhrase = diagnosisPhrases[index].split("");
   return (
     <div className="mt-6 text-center text-white text-sm sm:text-base md:text-lg font-semibold min-h-[2.5rem]">
       <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 min-h-[4rem] sm:min-h-[4.5rem] md:min-h-[5rem]">
-        <span className="text-white font-bold text-[18px] sm:text-[22px] md:text-[26px] leading-tight">
-          Symptoms Point To:
-        </span>
+        {/* This span for "Indications Of:" is now outside the animated div */}
+        <h3 className="text-white font-bold text-[18px] sm:text-[22px] md:text-[26px] leading-tight">
+          Indications Of :
+        </h3>
+        {/* This div will contain only the animating text */}
         <div className="relative overflow-hidden text-left max-w-[90vw] sm:max-w-[75vw] md:max-w-[50vw]">
+          {/* Invisible placeholder to preserve height */}
+          <span className="invisible block text-lg sm:text-xl md:text-2xl font-bold leading-tight">
+            {longestPhrase}
+          </span>
+
           <AnimatePresence mode="wait">
             {visible && (
               <motion.span
                 key={index}
-                className="inline-block text-lg sm:text-xl md:text-2xl font-bold leading-tight"
+                className="absolute top-0 left-0 inline text-lg sm:text-xl md:text-2xl font-bold leading-tight"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -69,7 +81,7 @@ const currentPhrase = diagnosisPhrases[index].split("");
                     <motion.span
                       key={char + idx}
                       variants={charVariants}
-                      className="inline-block"
+                      className="inline"
                     >
                       {char === " " ? "\u00A0" : char}
                     </motion.span>
