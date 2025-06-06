@@ -26,7 +26,6 @@ function Gallery() {
   const reelVideos = [reel1,reel2,reel3,reel4,reel5,reel6];
   
   return (
-    // min-h-screen bg-gradient-to-br from-[#0c3b88] via-[#181641] to-[#0f172a] py-20 px-4 text-white
     <section className="relative min-h-screen text-white overflow-hidden">
       <video
         autoPlay
@@ -50,12 +49,22 @@ function Gallery() {
             <h2 className="text-4xl md:text-5xl font-cinzel font-extrabold text-center mb-12 tracking-wide">
               Video Highlights
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 perspective-[1200px]">
               {videoList.map((vid, idx) => (
                 <motion.div
                   key={idx}
-                  whileHover={{ scale: 1.05, rotateY: 3 }}
-                  transition={{ duration: 0.4 }}
+                  initial={{
+                    opacity: 0,
+                    x: idx % 2 === 0 ? -100 : 100,
+                    rotateY: idx % 2 === 0 ? 25 : -25,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    rotateY: 0,
+                  }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  viewport={{ once: true }}
                   className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-xl overflow-hidden transform-style-3d"
                 >
                   <video
