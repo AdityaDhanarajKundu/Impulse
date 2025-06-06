@@ -8,6 +8,7 @@ import reel3 from "../assets/videos/reel3.mp4";
 import reel4 from "../assets/videos/reel4.mp4";
 import reel5 from "../assets/videos/reel5.mp4";
 import reel6 from "../assets/videos/reel6.mp4";
+import reel7 from "../assets/videos/reel7.mp4";
 import galleryBg from "../assets/gallery.mp4";
 import { motion } from "framer-motion";
 
@@ -23,7 +24,7 @@ function Gallery() {
     autoplay: true,
   };
 
-  const reelVideos = [reel1,reel2,reel3,reel4,reel5,reel6];
+  const reelVideos = [reel1,reel2,reel3,reel4,reel5,reel6,reel7];
   
   return (
     <section className="relative min-h-screen text-white overflow-hidden">
