@@ -38,6 +38,27 @@
 }
 
 @layer utilities{
+  .font-pirata {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .font-cinzel{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .font-michroma {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .font-style {
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
   .font-aldith {
     font-family: 'Aldith';
   }
@@ -69,6 +90,20 @@
 
   @keyframes blink {
     50% { border-color: transparent; }
+  }
+
+  @keyframes clarify {
+    0% {
+      opacity: 0;
+      transform: translateY(10px) scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .clarify-animation {
+    animation: clarify 3s ease-out forwards;
   }
 }
 

@@ -38,7 +38,7 @@ function Home() {
           impulse
         </h1>
 
-        <h2 className="text-white text-lg md:text-2xl lg:text-6xl font-medium mt-2 font-aldith">
+        <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-medium mt-2 font-aldith clarify-animation">
           Ignite The Utopia
         </h2>
 

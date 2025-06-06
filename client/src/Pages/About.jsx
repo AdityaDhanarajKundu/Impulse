@@ -20,11 +20,11 @@ function About() {
       <div className="max-w-5xl mx-auto px-6 py-24 space-y-16 text-white">
         {/* About Us */}
         <section className="space-y-4">
-          <h2 className="text-4xl sm:text-5xl font-extrabold inline-block bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-fade-in-down">
+          <h2 className="font-pirata text-4xl sm:text-5xl font-extrabold inline-block bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-fade-in-down">
             About Us
           </h2>
-          <p className="text-lg sm:text-xl leading-relaxed text-gray-200">
-            <strong className="text-indigo-300">
+          <p className="font-style text-lg sm:text-xl leading-relaxed text-gray-200">
+            <strong className="text-indigo-200">
               Midnapore Medical College & Hospital
             </strong>{" "}
             — Established with a mission to serve and a vision to lead, MMCH
@@ -38,20 +38,26 @@ function About() {
 
         {/* About IMPULSE */}
         <section className="space-y-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-indigo-400 tracking-tight underline decoration-pink-400 underline-offset-4">
+          {/* <h2 className="text-3xl sm:text-4xl font-bold tracking-tight decoration-pink-400 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text"> */}
+          <h2 className="font-pirata text-4xl sm:text-5xl font-extrabold inline-block bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-fade-in-down">
             About IMPULSE
           </h2>
-          <p className="text-lg sm:text-xl leading-relaxed text-gray-100">
-            <span className="font-semibold text-pink-300">
+          {/* <p className="text-lg sm:text-xl leading-relaxed text-gray-100"> */}
+          <p className="font-style text-lg sm:text-xl leading-relaxed text-gray-200">
+            <strong className="text-indigo-200">
               Feel the Beat of Medicine and Celebration
-            </span>{" "}
+            </strong>{" "}
+            {/* <span className="font-semibold text-pink-300">
+              Feel the Beat of Medicine and Celebration
+            </span>{" "} */}
             — IMPULSE is more than just a fest — it’s the beating heart of
             Midnapore Medical College. Curated by the 2022 Batch, this 3-day
             celebration of culture, intellect, and adrenaline welcomes all
             disciplines with open arms. From diagnostic duels to dance battles,
             quizzes to concerts — every corner vibrates with life.
           </p>
-          <p className="text-lg sm:text-xl leading-relaxed text-gray-100">
+          {/* <p className="text-lg sm:text-xl leading-relaxed text-gray-100"> */}
+          <p className="font-style text-lg sm:text-xl leading-relaxed text-gray-200">
             Here, white coats turn into superhero capes — blending intellect
             with passion.
           </p>
@@ -59,42 +65,45 @@ function About() {
 
         {/* What to Expect */}
         <section className="space-y-3">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-pink-400">
-            🎉 What to Expect
+          {/* <h2 className="text-2xl sm:text-3xl font-semibold text-pink-400"> */}
+          <h2 className="font-pirata text-4xl sm:text-5xl font-extrabold inline-block bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-fade-in-down">
+            What to Expect
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-base sm:text-lg text-gray-200">
-            <li className="flex items-center gap-2">
-              ⚕️ <span>Medico-centric Competitions</span>
+            <li className="font-style flex items-center gap-2">
+              <span> • Medico-centric Competitions</span>
             </li>
-            <li className="flex items-center gap-2">
-              🎤 <span>Live Performances & DJ Nights</span>
+            <li className="font-style flex items-center gap-2">
+              <span> • Live Performances & DJ Nights</span>
             </li>
-            <li className="flex items-center gap-2">
-              🧠 <span>Quizzes, Debates & Brain Battles</span>
+            <li className="font-style flex items-center gap-2">
+              <span> • Quizzes, Debates & Brain Battles</span>
             </li>
-            <li className="flex items-center gap-2">
-              🎮 <span>Sports & Gaming Tournaments</span>
+            <li className="font-style flex items-center gap-2">
+              <span> • Sports & Gaming Tournaments</span>
             </li>
-            <li className="flex items-center gap-2">
-              🎨 <span>Art, Fashion & Creativity Explosions</span>
+            <li className="font-style flex items-center gap-2">
+              <span> • Art, Fashion & Creativity Explosions</span>
             </li>
-            <li className="flex items-center gap-2">
-              🍔 <span>Food, Merch & Fun Stalls</span>
+            <li className="font-style flex items-center gap-2">
+              <span> • Food, Merch & Fun Stalls</span>
             </li>
           </ul>
         </section>
 
         {/* Why IMPULSE Matters */}
         <section className="space-y-4">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-red-400 tracking-wide">
-            ❤️ Why IMPULSE Matters
+          {/* <h2 className="text-2xl sm:text-3xl font-semibold text-red-400 tracking-wide"> */}
+          <h2 className="font-pirata text-4xl sm:text-5xl font-extrabold inline-block bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-fade-in-down">
+            Why IMPULSE Matters
           </h2>
-          <p className="text-lg sm:text-xl leading-relaxed text-gray-100 italic">
+          {/* <p className="text-lg sm:text-xl leading-relaxed text-gray-100 italic"> */}
+          <p className="font-style text-lg sm:text-xl leading-relaxed text-gray-200">
             Because even in the world of medicine, where hearts are studied —
-            some moments are meant to be{" "}
-            <span className="text-pink-400 not-italic font-bold">felt</span>.
+            some moments are meant to be felt.
           </p>
-          <p className="text-lg sm:text-xl leading-relaxed text-gray-100">
+          {/* <p className="text-lg sm:text-xl leading-relaxed text-gray-100"> */}
+          <p className="font-style text-lg sm:text-xl leading-relaxed text-gray-200">
             <span className="font-medium text-indigo-300">IMPULSE 2K25</span> is
             where we pause, celebrate, and pulse together — creating memories,
             forging friendships, and building a legacy that lives on long after

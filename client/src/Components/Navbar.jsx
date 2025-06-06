@@ -41,7 +41,7 @@ function Navbar() {
             <li key={item.label}>
               <Link
                 to={item.path}
-                className="relative px-6 py-2 font-extrabold group inline-block"
+                className="relative px-6 py-2 font-extrabold group inline-block font-michroma"
               >
                 {/* Animated Background Span */}
                 <span
@@ -91,7 +91,7 @@ function Navbar() {
                 <Link
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block py-2 px-4 rounded-full transition duration-300 ${
+                  className={`block py-2 px-4 rounded-full transition duration-300 font-michroma ${
                     isActive
                       ? "bg-gradient-to-r from-purple-800 to-indigo-700 text-white font-bold"
                       : "hover:bg-gradient-to-r hover:from-purple-800 hover:to-indigo-700 hover:text-white"
