@@ -47,8 +47,14 @@ function Home() {
         {/* CTA Buttons */}
         <div className="mt-8 flex gap-4 flex-wrap justify-center">
           <a
-            href="/register"
-            className="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-indigo-700 transition"
+            // href="/register"
+            onClick={() =>
+              window.open(
+                "https://res.cloudinary.com/dtical8ob/image/upload/v1749240836/chill_wijaxq.gif",
+                "_blank"
+              )
+            }
+            className="bg-indigo-600 cursor-pointer text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-indigo-700 transition"
           >
             Register Now
           </a>
