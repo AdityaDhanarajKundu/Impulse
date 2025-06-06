@@ -26,7 +26,7 @@ function Members() {
 
       {/* Foreground Content */}
       <div className="relative z-10 py-12 px-4 text-white">
-        <h1 className="text-[60px] font-bold text-center mb-10 text-indigo-300">
+        <h1 className="text-[60px] font-cinzel font-bold text-center mb-10 text-indigo-300">
           Meet the Core Team
         </h1>
         <MemberSection title="Joint Secretaries" members={jointSecretaries} />
