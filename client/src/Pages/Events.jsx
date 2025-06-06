@@ -1,17 +1,18 @@
 import React from "react";
 import EventCards from "../Components/EventCards";
 import events from "../data/data";
-import event from "../assets/events.mp4";
+// import event from "../assets/events.mp4";
 
 function Events() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-[#0c3b88] via-[#181641] to-[#0f172a] py-20 px-6 text-white overflow-hidden">
       {/* 🔹 Background Video Layer */}
       <video
-        src={event}
+        src="https://res.cloudinary.com/dtical8ob/video/upload/v1749241607/events_ogbvrf.mp4"
         autoPlay
         muted
         loop
+        preload="auto"
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       />

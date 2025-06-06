@@ -9,7 +9,7 @@ import reel4 from "../assets/videos/reel4.mp4";
 import reel5 from "../assets/videos/reel5.mp4";
 import reel6 from "../assets/videos/reel6.mp4";
 import reel7 from "../assets/videos/reel7.mp4";
-import galleryBg from "../assets/gallery.mp4";
+// import galleryBg from "../assets/gallery.mp4";
 import { motion } from "framer-motion";
 
 function Gallery() {
@@ -32,9 +32,10 @@ function Gallery() {
         autoPlay
         loop
         muted
+        preload="auto"
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-        src={galleryBg}
+        src="https://res.cloudinary.com/dtical8ob/video/upload/v1749241581/gallery_bc5lrs.mp4"
       />
 
       {/* 🔹 Glass Content Overlay */}

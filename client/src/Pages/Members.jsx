@@ -9,16 +9,17 @@ import {
   treasurers,
 } from "../data/members";
 import MemberSection from "../Components/MemberSection";
-import Galaxy from "../assets/galaxy.mp4";
+// import Galaxy from "../assets/galaxy.mp4";
 
 function Members() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background Video */}
       <video
-        src={Galaxy}
+        src="https://res.cloudinary.com/dtical8ob/video/upload/v1749241585/galaxy_wimqtd.mp4"
         autoPlay
         muted
+        preload="auto"
         loop
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"

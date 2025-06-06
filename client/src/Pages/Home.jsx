@@ -1,6 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import HomeVideo from "../assets/dna.mp4";
-import Typewriter from "typewriter-effect";
+// import HomeVideo from "../assets/dna.mp4";
 import AnimatedPhrase from '../Components/AnimatedPhrase';
 import Loader from '../Components/Loader';
 
@@ -26,8 +25,9 @@ function Home() {
   return (
     <section className="p-0 min-h-screen -mt-32 relative w-full overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b]">
       <video
-        src={HomeVideo}
+        src="https://res.cloudinary.com/dtical8ob/video/upload/v1749241565/dna_i6g6zr.mp4"
         autoPlay
+        preload='auto'
         muted
         loop
         playsInline

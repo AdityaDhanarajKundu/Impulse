@@ -1,14 +1,15 @@
 import React from "react";
 import sponsorLogos from "../data/sponsorList";
-import sponsorBg from "../assets/sponsors.mp4";
+// import sponsorBg from "../assets/sponsors.mp4";
 
 function Sponsors() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       {/* 🎥 Background Video */}
       <video
-        src={sponsorBg}
+        src="https://res.cloudinary.com/dtical8ob/video/upload/v1749241595/sponsors_ncxu1r.mp4"
         autoPlay
+        preload="auto"
         muted
         loop
         playsInline
