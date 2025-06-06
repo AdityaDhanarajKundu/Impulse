@@ -36,21 +36,21 @@ function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex space-x-8 text-lg font-medium">
+        <ul className="hidden md:flex ml-auto space-x-4 text-lg font-medium">
           {navItems.map((item) => (
             <li key={item.label}>
               <Link
                 to={item.path}
-                className="relative px-6 py-2 font-extrabold group inline-block font-michroma"
+                className="relative px-4 py-2 font-extrabold group inline-block font-michroma"
               >
                 {/* Animated Background Span */}
                 <span
                   className={`absolute inset-0 rounded-[30px] transition-all duration-300 ease-in-out z-0
-          ${
-            location.pathname === item.path
-              ? "bg-gradient-to-t from-purple-900 to-blue-900 h-full"
-              : "bg-gray-700 h-0 group-hover:h-full group-hover:bg-gradient-to-t group-hover:from-purple-900 group-hover:to-blue-900"
-          }`}
+            ${
+              location.pathname === item.path
+                ? "bg-gradient-to-t from-purple-900 to-blue-900 h-full"
+                : "bg-gray-700 h-0 group-hover:h-full group-hover:bg-gradient-to-t group-hover:from-purple-900 group-hover:to-blue-900"
+            }`}
                 />
 
                 {/* Link Text */}
