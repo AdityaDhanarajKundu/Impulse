@@ -10,6 +10,13 @@
 }
 
 @font-face {
+  font-family: "Wasted Vindey";
+  src: url("./assets/fonts/Wasted-Vindey.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Aldith";
   src: url("./assets/fonts/ALDITH-Grunge.otf") format("opentype");
   font-weight: normal;
@@ -58,6 +65,9 @@
     font-family: "Quintessential", serif;
     font-weight: 400;
     font-style: normal;
+  }
+  .font-wasted {
+    font-family: 'Wasted Vindey';
   }
   .font-aldith {
     font-family: 'Aldith';

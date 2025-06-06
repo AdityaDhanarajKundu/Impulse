@@ -18,11 +18,11 @@ function Events() {
 
       {/* 🔹 Content */}
       <div className="relative max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-16 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-cinzel font-extrabold mb-16 tracking-tight">
           Our Pre-Fest Events
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 perspective">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:grid-cols-2 perspective">
           {events.map((event, index) => (
             <EventCards key={index} event={event} index={index} />
           ))}

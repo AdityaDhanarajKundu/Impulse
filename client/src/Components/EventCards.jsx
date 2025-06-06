@@ -42,7 +42,7 @@ function EventCards({event, index}) {
       {/* Text Section */}
       <div className="flex-1 p-6 text-left flex flex-col justify-between">
         <div>
-          <h3 className="text-2xl font-bold text-indigo-300 mb-2">
+          <h3 className="text-2xl font-wasted font-bold text-indigo-300 mb-2">
             {event.title}
           </h3>
           <p className="text-gray-300 text-sm mb-4">{event.desc}</p>
