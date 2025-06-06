@@ -4,7 +4,7 @@ import sponsorBg from "../assets/sponsors.mp4";
 
 function Sponsors() {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-black">
+    <section className="relative min-h-screen w-full overflow-hidden">
       {/* 🎥 Background Video */}
       <video
         src={sponsorBg}
