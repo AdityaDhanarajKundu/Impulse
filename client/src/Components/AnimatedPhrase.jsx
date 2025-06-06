@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 const diagnosisPhrases = [
   "Acute Celebration",
   "Viral Excitement",
-  "A Surge of Adrenaline",
+  "Adrenaline Spike",
   "Dopamine Rush",
-  "Anatomy of Awesome",
+  "Endorphin High",
 ];  
 
 const longestPhrase = diagnosisPhrases.reduce(
@@ -50,23 +50,25 @@ const currentPhrase = diagnosisPhrases[index].split("");
     
   return (
     <div className="mt-6 text-center text-white text-sm sm:text-base md:text-lg font-semibold min-h-[2.5rem]">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 min-h-[4rem] sm:min-h-[4.5rem] md:min-h-[5rem]">
-        {/* This span for "Indications Of:" is now outside the animated div */}
-        <h3 className="text-white font-bold text-[18px] sm:text-[22px] md:text-[26px] leading-tight">
-          Indications Of :
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+        {/* Label */}
+        <h3 className="flex-shrink-0 text-white font-cinzel font-bold text-[18px] sm:text-[22px] md:text-[26px] leading-tight">
+          Diagnosis :
         </h3>
-        {/* This div will contain only the animating text */}
-        <div className="relative overflow-hidden text-left max-w-[90vw] sm:max-w-[75vw] md:max-w-[50vw]">
-          {/* Invisible placeholder to preserve height */}
-          <span className="invisible block text-lg sm:text-xl md:text-2xl font-bold leading-tight">
+
+        {/* Animated text container */}
+        <div className="relative text-left max-w-[90vw] sm:max-w-[75vw] md:max-w-[50vw] min-w-[200px]">
+          {/* Placeholder to maintain width and height */}
+          <span className="invisible block text-lg sm:text-xl md:text-2xl font-bold leading-tight whitespace-nowrap">
             {longestPhrase}
           </span>
 
+          {/* Visible animated content */}
           <AnimatePresence mode="wait">
             {visible && (
               <motion.span
                 key={index}
-                className="absolute top-0 left-0 inline text-lg sm:text-xl md:text-2xl font-bold leading-tight"
+                className="absolute top-0 left-0 font-cinzel italic inline-block align-middle text-lg sm:text-xl md:text-2xl font-bold leading-tight whitespace-nowrap"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
