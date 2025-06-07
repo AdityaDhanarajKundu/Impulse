@@ -45,17 +45,17 @@ export function MemberCard({member,index}){
         alt={member.name}
         className="w-24 h-24 rounded-full object-cover mx-auto border-4 border-indigo-500"
       />
-      <h3 className="mt-3 text-lg font-bold text-gray-900 dark:text-white">
+      <h3 className="mt-3 text-lg font-bold text-white">
         {member.name}
       </h3>
       <p className="text-indigo-600 text-sm font-medium">
         {member.designation}
       </p>
-      <p className="text-sm text-gray-600 dark:text-gray-300 break-all">
+      <p className="text-sm text-white break-all">
         {member.email}
       </p>
       {member.contact && (
-        <p className="text-sm text-gray-700 dark:text-gray-400">
+        <p className="text-sm text-gray-400">
           📞 {member.contact}
         </p>
       )}
