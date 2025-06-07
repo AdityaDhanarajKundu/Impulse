@@ -176,6 +176,14 @@ export const excutiveHeads = [
     contact: 8503072545,
   },
   {
+    email: "dasakash1706@gmail.com",
+    name: "Akash Das",
+    photo:
+      "https://res.cloudinary.com/dtical8ob/image/upload/v1749324553/akashDas_ea9dcn.jpg",
+    designation: "Executive Head",
+    contact: 8509661148,
+  },
+  {
     email: "bappapratihar21@gmail.com",
     name: "Bappa Pratihar",
     photo:
