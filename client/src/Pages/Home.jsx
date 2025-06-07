@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-// import HomeVideo from "../assets/dna.mp4";
+import { useNavigate } from 'react-router-dom';
 import AnimatedPhrase from '../Components/AnimatedPhrase';
 import Loader from '../Components/Loader';
 
@@ -8,6 +8,7 @@ function Home() {
     const hasVisited = sessionStorage.getItem("hasVisitedHome");
     return !hasVisited; // Show loader only if not visited
   });
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (loading) {
@@ -59,8 +60,8 @@ function Home() {
             Register Now
           </a>
           <a
-            href="/events"
-            className="bg-white text-indigo-700 px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-200 transition"
+            onClick={() => navigate("/events")}
+            className="bg-white cursor-pointer text-indigo-700 px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-200 transition"
           >
             Explore Events
           </a>
